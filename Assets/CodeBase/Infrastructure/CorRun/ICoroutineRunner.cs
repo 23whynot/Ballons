@@ -1,0 +1,11 @@
+﻿using System.Collections;
+using UnityEngine;
+
+namespace CodeBase.Infrastructure.CorRun
+{
+    public interface ICoroutineRunner
+    {
+        Coroutine StartCoroutine(IEnumerator timerRoutine);
+        void StopCoroutine(Coroutine timerCoroutine);
+    }
+}
